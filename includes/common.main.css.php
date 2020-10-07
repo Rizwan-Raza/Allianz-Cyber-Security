@@ -477,6 +477,36 @@
         user-select: none */
     }
 
+    @font-face {
+            font-family: "ProductSans";
+            font-style: normal;
+            font-weight: normal;
+            font-display: auto;
+            src: url(fonts/ProductSansRegular.ttf);
+        }
+
+        @font-face {
+            font-family: "ProductSansBold";
+            font-style: normal;
+            font-weight: 900;
+            font-display: auto;
+            src: url(fonts/ProductSansBold.ttf);
+        }
+
+        .bold-font {
+            font-family: 'ProductSansBold';
+        }
+
+        body {
+            font-family: 'ProductSans';
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+
     nav {
         color: #444;
         background-color: #fff

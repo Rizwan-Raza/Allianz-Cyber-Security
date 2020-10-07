@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        CDR Analysis | Allianz Cyber Security
+    </title>
+    <meta name="description" content="..." />
+    <meta name="keywords" content="..." />
+    <base href="../" />
+    <?php chdir("../"); ?>
+    <?php include "includes/head.inc.php"; ?>
+    <style>
+        .home-banner {
+            max-height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <?php include "layouts/nav.inc.html"; ?>
+    <header>
+        <img class="lh-0 home-banner" src="images/about-us.jpg" />
+    </header>
+    <section class="py-4 px-1">
+        <div class="container">
+            <h2 class="center-align fw-500 text-primary">CDR Analysis</h2>
+            <hr class="short-border" />
+            <br />
+            <p>Call monitoring and recording applications used by telecommunication companies generate extremely large
+                amount of call detail records (CDRs) in real-time, and companies constantly need to leverage from this
+                data to boost productivity. The volume of the calls and data captured by the call monitoring
+                applications is so large that it impossible to manually analyse and conclude the behaviour of the
+                network.</p>
+
+            <p>CDR Analysis takes call data records from a variety of sources and provides tools to identify patterns
+                and trends, as well as look for suspicious patterns in calls which may indicate fraud.</p>
+
+                <div><img src="images/cdr-analysis.png" class="w-full" /></div>
+
+        </div>
+    </section>
+    <?php require_once "layouts/footer.inc.html"; ?>
+
+    <?php require_once "includes/scripts.inc.php" ?>
+</body>
+
+</html>

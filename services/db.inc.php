@@ -8,9 +8,9 @@ class DB
     // private static $dbname = "apsara";
 
     private static $server = "localhost";
-    private static $username = "isotect_admin";
-    private static $password = "IsoTect@2019";
-    private static $dbname = "isotect_interiors";
+    private static $username = "root";
+    private static $password = "";
+    private static $dbname = "allianz";
 
     public static function getConnection()
     {
