@@ -4,7 +4,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST" and isset($_POST['username']) and isse
     error_reporting(0);
     extract($_POST, EXTR_SKIP);
 
-    $sql = "SELECT `_aid`, `name`, `username` FROM `admins` WHERE `username`='$username' AND `password`=MD5('*WAMP*$password*WAMP*')";
+    $sql = "SELECT `_aid`, `name`, `username` FROM `admins` WHERE `username`='$username' AND `password`=MD5('*Rex*$password*Rex*')";
     require '../../services/db.inc.php';
     $conn = DB::getConnection();
     $result = $conn->query($sql);

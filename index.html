@@ -12,34 +12,6 @@
 
     <?php include "includes/head.inc.php"; ?>
     <style>
-        @font-face {
-            font-family: "ProductSans";
-            font-style: normal;
-            font-weight: normal;
-            font-display: auto;
-            src: url(fonts/ProductSansRegular.ttf);
-        }
-
-        @font-face {
-            font-family: "ProductSansBold";
-            font-style: normal;
-            font-weight: 900;
-            font-display: auto;
-            src: url(fonts/ProductSansBold.ttf);
-        }
-
-        .bold-font {
-            font-family: 'ProductSansBold';
-        }
-
-        body {
-            font-family: 'ProductSans';
-        }
-
-        p {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
         .home-banner {
             max-height: 400px;
         }
@@ -134,6 +106,26 @@
             background-color: #05601b;
             background-blend-mode: hard-light;
         }
+
+        /********************************/
+
+        #services .row.d-flex {
+            flex-wrap: wrap;
+        }
+        #services .row.d-flex > .d-flex {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media only screen and (min-width: 1201px) {
+
+            .row .col.xl3 {
+                width: 20%;
+                margin-left: auto;
+                left: auto;
+                right: auto;
+            }
+        }
     </style>
 </head>
 
@@ -152,22 +144,22 @@
                 <li>
                     <img src="images/banners/b2.jpg">
                     <div class="caption left-align">
-                        <h3>Digital Forensics Services</h3>
-                        <h5 class="light grey-text text-lighten-3">We provide Digital Forensics Services</h5>
+                        <h3>Digital Forensic Services</h3>
+                        <h5 class="light grey-text text-lighten-3">We provide Digital Forensic Services</h5>
                     </div>
                 </li>
                 <li>
                     <img src="images/banners/b3.jpg">
                     <div class="caption left-align">
-                        <h3>Data Protection and Recovery</h3>
-                        <h5 class="light grey-text text-lighten-3">We provide Data Protection and Recovery</h5>
+                        <h3>Computer Forensics</h3>
+                        <h5 class="light grey-text text-lighten-3">We provide Computer Forensic Services</h5>
                     </div>
                 </li>
                 <li>
                     <img src="images/banners/b4.jpg">
                     <div class="caption center-align">
-                        <h3>IT Risk Security Management</h3>
-                        <h5 class="light grey-text text-lighten-3">We provide IT Risk and Security Management</h5>
+                        <h3>CDR Analysis</h3>
+                        <h5 class="light grey-text text-lighten-3">We provide CDR Analysis Services</h5>
                     </div>
                 </li>
             </ul>
@@ -198,73 +190,111 @@
                     <h2 class="fw-500 text-primary">Allianz Cyber Security</h2>
                     <hr class="short-border left" />
                     <br />
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur quos expedita magni vitae
-                        consequatur in id recusandae vero error quae reiciendis possimus omnis at nulla nisi nam minima,
-                        adipisci ipsam?
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur quos expedita magni vitae
-                        consequatur in id recusandae vero error quae reiciendis possimus omnis at nulla nisi nam minima,
-                        adipisci ipsam?
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur quos expedita magni vitae
-                        consequatur in id recusandae vero error quae reiciendis possimus omnis at nulla nisi nam minima,
-                        adipisci ipsam?
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur quos expedita magni vitae
-                        consequatur in id recusandae vero error quae reiciendis possimus omnis at nulla nisi nam minima,
-                        adipisci ipsam?
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur quos expedita magni vitae
-                        consequatur in id recusandae vero error quae reiciendis possimus omnis at nulla nisi nam minima,
-                        adipisci ipsam?
-                    </p>
+                    <p>Allianz cyber security India Pvt. Ltd. is a division of allianz Enterprise. With 10 years plus
+                        trading experience in India, we have our eyes closely focused on market needs. In 2019 we began
+                        offering
+                        Digital Forensics as a service.</p>
+                    <p>Our Forensics team has a diverse background ranging from mainstream IT and commercial
+                        intelligence to
+                        network security and data analysis. We use the very best of breed tools to ensure consistent
+                        results in a
+                        court-accepted manner.</p>
+                    <p>Our core business is providing digital forensic services to government agencies, attorneys,
+                        accountants, auditors and private investigators around India.</p>
+                    <p>We pride ourselves on clear and methodical practices, a secure chain of custody and a broad range
+                        of
+                        skills to meet the most demanding requirements.</p>
+                    <p>Allianz cyber security India Pvt. Ltd. is the Delhi-based digital forensics company, servicing
+                        clients throughout the India. Our forensics team are able to travel at short notice and the
+                        majority of our
+                        triage equipment is portable to ensure fast results.</p>
                     <a class="btn bg-primary right" href="about">Know more</a>
                 </div>
             </div>
     </section>
-    <section class="grey lighten-3 py-4" id="services">
-        <div class="container center-align">
+    <section class="grey lighten-3 p-4" id="services">
+        <div class="center-align">
             <h3 class="center-align fw-500 text-primary">Our Services</h3>
             <div class="row d-flex">
-                <div class="col s12 m6 l4 p-m-3 d-flex">
+                <div class="col s12 m6 l4 xl3 p-m-3 d-flex">
                     <div class="card border-radius-8" style="overflow: hidden">
                         <div class="card-image">
-                            <img src="images/card1.jpg">
+                            <img src="images/card-cdr.jpg">
+                            <span class="card-title fw-400 text-z-depth-2">CDR Analysis</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light bg-primary modal-trigger"
+                                href="services/cdr-analysis"><i class="material-icons">launch</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>Call monitoring and recording applications used by telecommunication companies generate
+                                extremely large
+                                amount of call detail records (CDRs) in real-time, and companies constantly need to
+                                leverage from this
+                                data to boost productivity. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 xl3 p-m-3 d-flex">
+                    <div class="card border-radius-8" style="overflow: hidden">
+                        <div class="card-image">
+                            <img src="images/card-comp.jpg">
+                            <span class="card-title fw-400 text-z-depth-2">Computer Forensics</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light bg-primary modal-trigger"
+                                href="services/computer-forensics"><i class="material-icons">launch</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>There has been a significant rise in the amount of computer and internet related crime in
+                                recent years.
+                                This is hardly surprising as we increasingly rely on computers and the internet to carry
+                                out
+                                transactions and store and exchange information.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 xl3 p-m-3 d-flex">
+                    <div class="card border-radius-8" style="overflow: hidden">
+                        <div class="card-image">
+                            <img src="images/card-digi.jpg">
                             <span class="card-title fw-400 text-z-depth-2">Digital Forensics Services</span>
                             <a class="btn-floating halfway-fab waves-effect waves-light bg-primary modal-trigger"
-                                href="#"><i class="material-icons">launch</i></a>
+                                href="services/digital-forensic-services"><i class="material-icons">launch</i></a>
                         </div>
                         <div class="card-content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos dicta optio
-                                soluta cumque in doloribus aut animi, rerum blanditiis aspernatur est. Pariatur odio
-                                quos modi accusantium nemo totam laborum.</p>
+                            <p>As specialists in Digital Forensics, allianz will perform analysis and examinations for
+                                government
+                                agencies, solicitors and commercial organizations in the event of a crime or
+                                unauthorized access to
+                                information systems.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 l4 p-m-3 d-flex">
+                <div class="col s12 m6 l4 xl3 p-m-3 d-flex">
                     <div class="card border-radius-8" style="overflow: hidden">
                         <div class="card-image">
-                            <img src="images/card2.jpg">
-                            <span class="card-title fw-400 text-z-depth-2">Data Protection and Recovery</span>
+                            <img src="images/card-dvr.jpg">
+                            <span class="card-title fw-400 text-z-depth-2">DVR Forensics</span>
                             <a class="btn-floating halfway-fab waves-effect waves-light bg-primary modal-trigger"
-                                href="services/interior-exterior-painting"><i class="material-icons">launch</i></a>
+                                href="services/dvr-forensics"><i class="material-icons">launch</i></a>
                         </div>
                         <div class="card-content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos dicta optio
-                                soluta cumque in doloribus aut animi, rerum blanditiis aspernatur est. Pariatur odio
-                                quos modi accusantium nemo totam laborum.</p>
+                            <p>Forensic Video Analysis is the science of analyzing and comparing videos for legal
+                                matters. Digital Video Recorder (DVR) being one of the widely used surveillance systems
+                                for image and video frame recording is a reliable source for preliminary investigation.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 l4 p-m-3 d-flex">
+                <div class="col s12 m6 l4 xl3 p-m-3 d-flex">
                     <div class="card border-radius-8" style="overflow: hidden">
                         <div class="card-image">
-                            <img src="images/card3.jpg">
-                            <span class="card-title fw-400 text-z-depth-2">IT Risk Security Management</span>
+                            <img src="images/card-mobile.jpg">
+                            <span class="card-title fw-400 text-z-depth-2">Mobile Device Forensics</span>
                             <a class="btn-floating halfway-fab waves-effect waves-light bg-primary modal-trigger"
-                                href="services/metal-fabrication-work"><i class="material-icons">launch</i></a>
+                                href="services/mobile-device-forensics"><i class="material-icons">launch</i></a>
                         </div>
                         <div class="card-content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos dicta optio
-                                soluta cumque in doloribus aut animi, rerum blanditiis aspernatur est. Pariatur odio
-                                quos modi accusantium nemo totam laborum.</p>
+                            <p>Cell Phone Forensics / Mobile Device Forensics is the recovery of digital evidence, or
+                                data, from a Cell
+                                Phone using forensic methods. The term mobile device usually refers to smartphones</p>
                         </div>
                     </div>
                 </div>
@@ -289,7 +319,9 @@
                         <h5>Enterprise wide</h5>
                         <div class="border-top-1 grey-border border-darken-2"></div>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolores accusamus assumenda quis perferendis veritatis doloribus omnis nesciunt possimus ab, sint pariatur. Iusto molestiae, repudiandae amet cupiditate perferendis earum voluptatem!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolores accusamus assumenda
+                            quis perferendis veritatis doloribus omnis nesciunt possimus ab, sint pariatur. Iusto
+                            molestiae, repudiandae amet cupiditate perferendis earum voluptatem!
                         </p>
                     </div>
                 </div>
@@ -301,7 +333,9 @@
                         <h5>Objective</h5>
                         <div class="border-top-1 grey-border border-darken-2"></div>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis illum neque quod aperiam consectetur expedita praesentium nobis ipsam, modi voluptates natus saepe cumque adipisci iste tempora, ab distinctio nisi reprehenderit?
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis illum neque quod aperiam
+                            consectetur expedita praesentium nobis ipsam, modi voluptates natus saepe cumque adipisci
+                            iste tempora, ab distinctio nisi reprehenderit?
                         </p>
                     </div>
                 </div>
@@ -314,7 +348,9 @@
                         </h5>
                         <div class="border-top-1 grey-border border-darken-2"></div>
                         <p>
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ipsam sapiente officiis vero suscipit eum, nesciunt placeat provident, minus possimus voluptatum quos magnam enim esse hic. Nam ab officia nihil!
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ipsam sapiente officiis vero
+                            suscipit eum, nesciunt placeat provident, minus possimus voluptatum quos magnam enim esse
+                            hic. Nam ab officia nihil!
                         </p>
                     </div>
                 </div>
@@ -326,7 +362,9 @@
                         <h5>Real time</h5>
                         <div class="border-top-1 grey-border border-darken-2"></div>
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, soluta eveniet corrupti quos asperiores exercitationem eius ratione tempora at voluptas earum numquam debitis sequi dolorem molestias, totam nesciunt sint placeat!
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, soluta eveniet
+                            corrupti quos asperiores exercitationem eius ratione tempora at voluptas earum numquam
+                            debitis sequi dolorem molestias, totam nesciunt sint placeat!
                         </p>
                     </div>
                 </div>
@@ -339,25 +377,33 @@
         <div class="carousel">
             <div class="carousel-item card-panel">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam ut similique esse, quod numquam doloremque pariatur officia rem cumque porro aliquam veritatis, impedit excepturi dolore magnam, autem ex animi assumenda.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam ut similique esse, quod numquam
+                    doloremque pariatur officia rem cumque porro aliquam veritatis, impedit excepturi dolore magnam,
+                    autem ex animi assumenda.
                 </p>
                 <h4 class="right-align">- John Doe</h4>
             </div>
             <div class="carousel-item card-panel">
                 <p>
-                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae recusandae, voluptatem cupiditate odit provident eum ipsa ullam ratione, porro incidunt aliquam reiciendis iste blanditiis nihil nostrum aspernatur placeat obcaecati voluptate?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae recusandae, voluptatem cupiditate
+                    odit provident eum ipsa ullam ratione, porro incidunt aliquam reiciendis iste blanditiis nihil
+                    nostrum aspernatur placeat obcaecati voluptate?
                 </p>
                 <h4 class="right-align">- John Doe</h4>
             </div>
             <div class="carousel-item card-panel">
                 <p>
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, veniam! Provident est atque tenetur consectetur sequi molestiae! Fugiat qui sunt aut laboriosam voluptas ex delectus distinctio, eius veritatis error eaque?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, veniam! Provident est atque
+                    tenetur consectetur sequi molestiae! Fugiat qui sunt aut laboriosam voluptas ex delectus distinctio,
+                    eius veritatis error eaque?
                 </p>
                 <h4 class="right-align">- John Doe</h4>
             </div>
             <div class="carousel-item card-panel">
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque voluptas minima architecto debitis quo eos blanditiis, voluptatibus nesciunt fugiat quae dicta at consequatur ipsam voluptate atque aperiam cumque qui esse.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque voluptas minima architecto
+                    debitis quo eos blanditiis, voluptatibus nesciunt fugiat quae dicta at consequatur ipsam voluptate
+                    atque aperiam cumque qui esse.
                 </p>
                 <h4 class="right-align">- John Doe</h4>
             </div>

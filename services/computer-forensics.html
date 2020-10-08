@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Computer Forensics | Allianz Cyber Security
+    </title>
+    <meta name="description" content="..." />
+    <meta name="keywords" content="..." />
+    <base href="../" />
+    <?php chdir("../"); ?>
+    <?php include "includes/head.inc.php"; ?>
+    <style>
+        .home-banner {
+            max-height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <?php include "layouts/nav.inc.html"; ?>
+    <header>
+        <img class="lh-0 home-banner" src="images/computer-forensics-banner.jpg" />
+    </header>
+    <section class="py-4 px-1">
+        <div class="container">
+            <h2 class="center-align fw-500 text-primary">Computer Forensics</h2>
+            <hr class="short-border" />
+            <br />
+            <p>There has been a significant rise in the amount of computer and internet related crime in recent years.
+                This is hardly surprising as we increasingly rely on computers and the internet to carry out
+                transactions and store and exchange information. The very nature of computers means that whatever you do
+                leaves a trail of evidence, but in order to be used in court this needs to be gathered and handled in
+                such a way that it isn’t compromised. This is where digital forensics comes into play.</p>
+            <br />
+            <div class="center"><img src="images/computer-forensics.jpg" class="w-full" style="max-width: 500px;" />
+            </div>
+            <br />
+            <p>CThough the gathering of digital evidence now plays a key part in the investigation of many crimes, it’s
+                also used by a growing number of businesses. The skills of a computer investigator can be useful in
+                uncovering misuse of company computers or email, or the copying and leaking of data from within an
+                organisation. Our services can of course be adapted to meet the specific needs of the client.</p>
+
+
+        </div>
+    </section>
+    <?php require_once "layouts/footer.inc.html"; ?>
+
+    <?php require_once "includes/scripts.inc.php" ?>
+</body>
+
+</html>

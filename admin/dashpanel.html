@@ -6,7 +6,7 @@ if (isset($_SESSION['admin']) and $_SESSION['admin'] == true) {
 <html lang="en">
 
 <head>
-    <title>Digital Marketing Company | Web Design Company</title>
+    <title>Dash Panel | Allianz Cyber Security</title>
     <base href="../">
     <?php include "includes/head.inc.php"; ?>
     <!-- <link rel="stylesheet" href="css/signin.css" /> -->
@@ -23,6 +23,16 @@ if (isset($_SESSION['admin']) and $_SESSION['admin'] == true) {
         $conn = DB::getConnection(); 
         $result = $conn->query($sql);
         $num_q = $result->fetch_assoc()['COUNT(`_qid`)'];
+
+        $sql = "SELECT COUNT(`_aid`) FROM `admins`"; 
+        $conn = DB::getConnection(); 
+        $result = $conn->query($sql);
+        $num_a = $result->fetch_assoc()['COUNT(`_aid`)'];
+
+        $sql = "SELECT COUNT(`_bid`) FROM `blogs`"; 
+        $conn = DB::getConnection(); 
+        $result = $conn->query($sql);
+        $num_b = $result->fetch_assoc()['COUNT(`_bid`)'];
         
         ?>
 
@@ -47,6 +57,34 @@ if (isset($_SESSION['admin']) and $_SESSION['admin'] == true) {
                                 </div>
                                 <div class="card-action center-align">
                                     Queries
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col s12 m6 l4 xl3">
+                        <a href="admin/admins" class="waves-effect waves-light w-full">
+                            <div class="card bg-primary">
+                                <div class="card-content white-text">
+                                    <h4 class="fw-500 center-align">
+                                        <?=$num_a?>
+                                    </h4>
+                                </div>
+                                <div class="card-action center-align">
+                                    Admins
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col s12 m6 l4 xl3">
+                        <a href="admin/blogs" class="waves-effect waves-light w-full">
+                            <div class="card bg-primary">
+                                <div class="card-content white-text">
+                                    <h4 class="fw-500 center-align">
+                                        <?=$num_b?>
+                                    </h4>
+                                </div>
+                                <div class="card-action center-align">
+                                    Blogs
                                 </div>
                             </div>
                         </a>
