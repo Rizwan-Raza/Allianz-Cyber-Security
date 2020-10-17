@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Support | Allianz Cyber Security
+    </title>
+    <!-- <meta name="description"
+        content="Get in touch with isotect interiors team for your work query or consultant. If you any problem or solution related to our work contact us." />
+    <meta name="keywords" content=" " />
+    <?php include "includes/head.inc.php"; ?>
+    <style>
+        .home-banner {
+            max-height: 300px;
+        }
+
+        label span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <?php include "layouts/nav.inc.html"; ?>
+    <header>
+        <img class="lh-0 home-banner" src="images/support.jpg" />
+    </header>
+
+    <section class="py-4">
+        <div class="container">
+            <h2 class="fw-500 text-primary">Support</h2>
+            <br />
+            <div class="border-1 white grey-border border-lighten-2" id="support_form">
+                <form class="validate px-4 py-2">
+                    <div class="input-field">
+                        <input type="text" name="name" id="c_name" required />
+                        <label for="c_name">
+                            Name <span>*</span>
+                        </label>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" name="email" id="c_email" required />
+                        <label for="c_email">
+                            Email <span>*</span>
+                        </label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="company" id="c_company" required />
+                        <label for="c_company">
+                            Company <span>*</span>
+                        </label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="product" id="c_product" required />
+                        <label for="c_product">
+                            Product <span>*</span>
+                        </label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="product" id="c_product" required />
+                        <label for="c_product">
+                            Serial Number
+                        </label>
+                    </div>
+                    <div class="input-field">
+                        <textarea id="c_details" class="materialize-textarea" data-length="100" required
+                            name="details"></textarea>
+                        <label for="c_details">Details of the issue <span>*</span></label>
+                    </div>
+                    <div class="file-field input-field">
+                        <div class="btn bg-primary">
+                            <span>Attachment</span>
+                            <input type="file" multiple>
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Upload one or more files which can be screenshot">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn bg-primary white-text right">
+                        Submit
+                    </button>
+                    <br clear="both" />
+                    <br />
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <?php require_once "layouts/contact.inc.html"; ?>
+
+    <?php require_once "layouts/footer.inc.html"; ?>
+
+    <?php require_once "includes/scripts.inc.php" ?>
+</body>
+
+</html>
