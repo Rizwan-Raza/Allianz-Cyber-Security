@@ -61,7 +61,7 @@
             #about {
                 background: linear-gradient(to right, #fff 60%, transparent 90%), url('images/about.jpg');
                 background-blend-mode: lighten;
-                background-size: auto 200%;
+                background-size: auto 100%;
                 background-position: center right;
             }
         }
@@ -84,13 +84,13 @@
             }
         }
 
-        h1,
+        /* h1,
         h2,
         h3 {
             font-family: 'ProductSansBold';
         }
-
-        .slider {
+ */
+        .slider, ul.slides {
             height: 400px !important;
         }
 
@@ -100,10 +100,11 @@
 
         .slides .caption {
             text-shadow: 0px 0px 5px #000000;
+            /* background-color: #ffffff80; */
         }
 
         .slides li img {
-            background-color: #05601b;
+            background-color: #002747;
             background-blend-mode: hard-light;
         }
 
@@ -117,7 +118,7 @@
             margin-right: auto;
         }
 
-        @media only screen and (min-width: 1201px) {
+        @media only screen and (min-width: 1441px) {
 
             .row .col.xl3 {
                 width: 20%;
@@ -136,28 +137,28 @@
             <ul class="slides">
                 <li>
                     <img src="images/banners/b1.jpg">
-                    <div class="caption center-align">
+                    <div class="caption">
                         <h3>Cyber Security isn't optional</h3>
                         <h5 class="light grey-text text-lighten-3">In this world of no trust, we measure trust</h5>
                     </div>
                 </li>
                 <li>
                     <img src="images/banners/b2.jpg">
-                    <div class="caption left-align">
+                    <div class="caption">
                         <h3>Digital Forensic Services</h3>
                         <h5 class="light grey-text text-lighten-3">We provide Digital Forensic Services</h5>
                     </div>
                 </li>
                 <li>
                     <img src="images/banners/b3.jpg">
-                    <div class="caption left-align">
+                    <div class="caption">
                         <h3>Computer Forensics</h3>
                         <h5 class="light grey-text text-lighten-3">We provide Computer Forensic Services</h5>
                     </div>
                 </li>
                 <li>
                     <img src="images/banners/b4.jpg">
-                    <div class="caption center-align">
+                    <div class="caption">
                         <h3>CDR Analysis</h3>
                         <h5 class="light grey-text text-lighten-3">We provide CDR Analysis Services</h5>
                     </div>
@@ -216,7 +217,7 @@
         <div class="center-align">
             <h3 class="center-align fw-500 text-primary">Our Services</h3>
             <div class="row d-flex">
-                <div class="col s12 m6 l4 xl3 p-m-3 d-flex">
+                <div class="col s12 m6 l4 p-m-3 d-flex">
                     <div class="card border-radius-8" style="overflow: hidden">
                         <div class="card-image">
                             <img src="images/card-cdr.jpg">
@@ -233,7 +234,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 l4 xl3 p-m-3 d-flex">
+                <div class="col s12 m6 l4 p-m-3 d-flex">
                     <div class="card border-radius-8" style="overflow: hidden">
                         <div class="card-image">
                             <img src="images/card-comp.jpg">
@@ -250,7 +251,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 l4 xl3 p-m-3 d-flex">
+                <div class="col s12 m6 l4 p-m-3 d-flex">
                     <div class="card border-radius-8" style="overflow: hidden">
                         <div class="card-image">
                             <img src="images/card-digi.jpg">
@@ -267,7 +268,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 l4 xl3 p-m-3 d-flex">
+                <div class="col s12 m6 l4 p-m-3 d-flex">
                     <div class="card border-radius-8" style="overflow: hidden">
                         <div class="card-image">
                             <img src="images/card-dvr.jpg">
@@ -283,7 +284,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 l4 xl3 p-m-3 d-flex">
+                <div class="col s12 m6 l4 p-m-3 d-flex">
                     <div class="card border-radius-8" style="overflow: hidden">
                         <div class="card-image">
                             <img src="images/card-mobile.jpg">
@@ -372,7 +373,7 @@
         </div>
     </section>
     <section class="p-4 grey lighten-2" id="testimonial">
-        <h3 class="text-capitalize center-align px-2 fw-600 text-primary">What People say</h3>
+        <h3 class="text-capitalize center-align px-2 fw-500 text-primary">What People say</h3>
         <!-- <hr class="short-border" /> -->
         <div class="carousel">
             <div class="carousel-item card-panel">

@@ -37,27 +37,27 @@ body {
 .input-field input:focus+label,
 .input-field textarea:focus+label,
 .input-field .prefix.active {
-    color: #05601b !important;
+    color: #002747 !important;
 }
 
 /* label underline focus color */
 .input-field input:focus,
 .input-field textarea:focus {
-    border-bottom: 1px solid #05601b !important;
-    box-shadow: 0 1px 0 0 #05601b !important;
+    border-bottom: 1px solid #002747 !important;
+    box-shadow: 0 1px 0 0 #002747 !important;
 }
 
 .dropdown-content li>a,
 .dropdown-content li>span {
-    color: #05601b;
+    color: #002747;
 }
 
 .switch label input[type=checkbox]:checked+.lever:after {
-    background-color: #05601b;
+    background-color: #002747;
 }
 
 .switch label input[type=checkbox]:checked+.lever {
-    background-color: #05601b80;
+    background-color: #00274780;
 }
 
 .card-action {
@@ -136,7 +136,7 @@ body {
     }
 
     ::-webkit-scrollbar-thumb {
-        background-color: #05601b;
+        background-color: #002747;
     }
 
 

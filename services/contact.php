@@ -36,23 +36,23 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
                 </table>
                 <table style="padding: 8px 16px;width: 100%;font-weight: 500;" cellspacing="10">
                     <tr>
-                        <td style="color: #05601b;width: 30%">Name:</td>
+                        <td style="color: #002747;width: 30%">Name:</td>
                         <td style="width: 70%;">' . $name . '</td>
                     </tr>
                     <tr>
-                        <td style="color: #05601b;width: 30%">Email:</td>
+                        <td style="color: #002747;width: 30%">Email:</td>
                         <td style="width: 70%;">' . $email . '</td>
                     </tr>
                     <tr>
-                        <td style="color: #05601b;width: 30%">Number:</td>
+                        <td style="color: #002747;width: 30%">Number:</td>
                         <td style="width: 70%;">' . $number . '</td>
                     </tr>
                     <tr>
-                        <td style="color: #05601b;width: 30%">Message:</td>
+                        <td style="color: #002747;width: 30%">Message:</td>
                         <td style="width: 70%;">' . $message . '</td>
                     </tr>
                 </table>
-                <table style="background-color: #05601b;padding: 8px 16px;width: 100%;color: #ffffff;">
+                <table style="background-color: #002747;padding: 8px 16px;width: 100%;color: #ffffff;">
                     <tr>
                         <td style="line-height: 50px;vertical-align: top; margin:0px; font-size: 24px; font-weight: 500;"><a
                                 href="https://www.isotectinteriors.in/" style="color: #ffffff;text-decoration:none">Apsara

@@ -238,16 +238,16 @@
         }
     }
 
-    .bg-primary {
+    .bg-primary, .slider .indicators .indicator-item.active {
         /* background-color: #3d85c6 !important; */
         /* background-color: #3d6ed9 !important; */
-        background-color: #05601b !important;
+        background-color: #002747 !important;
         color: #fff !important
     }
 
     .primary-border {
         /* border-color: #3d85c6 */
-        border-color: #05601b !important
+        border-color: #002747 !important
     }
 
     a {
@@ -257,7 +257,7 @@
     .hover-text-primary:hover,
     .text-primary {
         /* color: #3d85c6 !important */
-        color: #05601b !important
+        color: #002747 !important
     }
 
     .text-light {
@@ -397,22 +397,22 @@
 
     .fw-400 {
         font-weight: 400 !important;
-        font-family: 'ProductSans';
+        /* font-family: 'ProductSans'; */
     }
 
     .fw-500 {
-        font-weight: 500;
-        font-family: 'ProductSansBold';
+        font-weight: 600;
+        /* font-family: 'ProductSansBold'; */
     }
 
     .fw-600 {
         font-weight: 600;
-        font-family: 'ProductSansBold';
+        /* font-family: 'ProductSansBold'; */
     }
 
     .fw-700 {
         font-weight: 700;
-        font-family: 'ProductSansBold';
+        /* font-family: 'ProductSansBold'; */
     }
 
     .lh-0 {
@@ -494,11 +494,12 @@
     }
 
     .bold-font {
-        font-family: 'ProductSansBold', Arial, Helvetica, sans-serif;
+        /* font-family: 'ProductSansBold', Arial, Helvetica, sans-serif; */
     }
 
     body {
-        font-family: 'ProductSans', Arial, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
+        /* font-family: 'ProductSans', Arial, Helvetica, sans-serif; */
     }
 
     p {
@@ -520,12 +521,13 @@
     .input-field .prefix.active,
     .input-field input:focus+label,
     .input-field textarea:focus+label {
-        color: #05601b !important
+        color: #002747 !important
     }
 
     .brand-img {
         height: 50px;
-        margin-bottom: -12px
+        margin-bottom: -12px;
+        filter: hue-rotate(-260deg) brightness(0.6);
     }
 
     .small-drop {
@@ -653,7 +655,7 @@
     }
 
     hr.short-border {
-        border: 2px solid #05601b;
+        border: 2px solid #002747;
         width: 100px;
         margin: 0 auto
     }
@@ -723,8 +725,8 @@
 
     .input-field input:focus,
     .input-field textarea:focus {
-        border-bottom: 1px solid #05601b !important;
-        box-shadow: 0 1px 0 0 #05601b !important
+        border-bottom: 1px solid #002747 !important;
+        box-shadow: 0 1px 0 0 #002747 !important
     }
 
     .serviceDropDownContainer .dropdown-content {
@@ -867,16 +869,18 @@
 
         ::-webkit-scrollbar-thumb {
             /* background-color: #3d85c6 */
-            background-color: #05601b
+            background-color: #002747
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background-color: #044D16
+            /* background-color: #044D16 */
+            background-color: #004767
         }
 
         ::-webkit-scrollbar-thumb:active,
         ::-webkit-scrollbar-thumb:focus {
-            background-color: #033810
+            /* background-color: #033810 */
+            background-color: #005787
         }
 
         ::-webkit-scrollbar-track {
